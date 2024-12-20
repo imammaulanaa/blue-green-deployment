@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  template:
+    metadata:
+      labels:
+        version: blue
+    spec:
+      containers:
+      - name: app
+        image: my-node-app:blue
